@@ -1,0 +1,72 @@
+/* ----------------GOOGLE FONTS------------- */
+@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Color palet */
+/* #E3F2FD
+#BBDEFB
+#90CAF9
+#64B5F6
+#42A5F5
+#2196F3
+#1E88E5
+#1976D2
+#1565C0
+#0D47A1 */
+
+/* ----------------CSS VARIABLES------------- */
+:root {
+  /* ----------------Colours------------- */
+
+  --color-white: #fff;
+  --color-primary: #2196f3;
+  --color-primary-light: #64b5f6;
+  --color-primary-dark: #1976d2;
+  --color-text: #041530;
+
+  /*-----------Font and typography-------- */
+  --body-font: "Poppins", sans-serif;
+  --logo-font: "Stylish", sans-serif;
+
+  /*---------Font weight ------------*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/*---------------BASE-----------------*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: #1e88e5;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background: #f7f7f7;
+  color: var(--color-text);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
