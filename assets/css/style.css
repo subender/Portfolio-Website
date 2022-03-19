@@ -70,3 +70,66 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*---------------Reusable CSS Classes-----------------*/
+
+.section {
+  min-height: 100vh;
+  padding: 2rem 9%;
+}
+
+/*---------------NAV BAR-----------------*/
+
+.header {
+  background-color: #fff;
+  height: 6.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 10%;
+  box-shadow: 0 2px 4px rgba(146, 161, 176, 0.3);
+}
+
+.logo:link,
+.logo:visited {
+  font-family: var(--logo-font);
+  font-size: 2.4rem;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.logo:hover,
+.logo:active {
+  color: #e5383b;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.navbar .nav-items:link,
+.navbar .nav-items:visited {
+  font-size: 1.8rem;
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+
+.navbar .nav-items:hover,
+.navbar .nav-items:active,
+.navbar .nav-items.active {
+  color: var(--color-primary);
+  border-bottom: 0.2rem solid var(--color-primary);
+  padding: 0.5rem 0;
+}
