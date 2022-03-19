@@ -23,6 +23,7 @@
   --color-primary-light: #64b5f6;
   --color-primary-dark: #1976d2;
   --color-text: #041530;
+  --color-heading: #0d47a1;
 
   /*-----------Font and typography-------- */
   --body-font: "Poppins", sans-serif;
@@ -44,7 +45,8 @@
 }
 
 *::selection {
-  background: #1e88e5;
+  /* background: #1e88e5; */
+  background: hotpink;
   color: #fff;
 }
 
@@ -77,6 +79,21 @@ img {
   min-height: 100vh;
   padding: 2rem 9%;
 }
+.btn,
+.btn:link,
+.btn:visited {
+  position: absolute;
+  display: inline-block;
+  margin-top: 2rem;
+  border-radius: 4rem;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  /* box-shadow: 0px 5px 18px rgba(33, 149, 243, 0.5); */
+  box-shadow: 0px 8px 20px rgba(8, 8, 8, 0.3);
+  background: var(--color-primary);
+  color: var(--color-white);
+  transition: 0.4s;
+}
 
 /*---------------NAV BAR-----------------*/
 
@@ -87,6 +104,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,6 +118,7 @@ img {
   font-size: 2.4rem;
   font-weight: bold;
   transition: color 0.2s ease;
+  color: #041530;
 }
 
 .logo:hover,
@@ -132,4 +151,191 @@ img {
   color: var(--color-primary);
   border-bottom: 0.2rem solid var(--color-primary);
   padding: 0.5rem 0;
+}
+
+/*---------------HERO SECTION-----------------*/
+
+/* home section  */
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 100vh;
+}
+
+/* for animated background */
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+  margin-top: 10rem;
+}
+
+.content .hero-heading {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+}
+
+.content .hero-heading .wave {
+  animation: waving-hand 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+/* Animation for waving hand  */
+@keyframes waving-hand {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.content .hero-text {
+  font-size: 4rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+/* auto typing text styling  */
+.content #type {
+  font-size: 3.5rem;
+  color: #e5383b;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+/* CTA button styling  */
+.content .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.content .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--color-white);
+  margin-left: 0.6rem;
+  transition: 0.3s;
+}
+
+.content .btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.content .btn-primary:hover svg {
+  transform: translateX(5px);
+}
+
+/* Social Media Icons Styling  */
+.social-box {
+  position: relative;
+  margin-top: 15rem;
+}
+
+.social-box .button {
+  display: inline-block;
+  overflow: hidden;
+  height: 6rem;
+  width: 6rem;
+  margin: 0 0.5rem;
+  background-color: #e3f2fd;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+.social-box .button .icn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 6rem;
+  transition: all 0.3s ease;
+}
+
+.social-box .button .icn a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-box .button:nth-child(1):hover .icn {
+  background-color: #333;
+}
+.social-box .button:nth-child(2):hover .icn {
+  background-color: #0077b5;
+}
+.social-box .button:nth-child(3):hover .icn {
+  background-color: #1da1fe;
+}
+.social-box .button:nth-child(4):hover .icn {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
+}
+
+.social-box .button:hover .icn svg {
+  fill: var(--color-white);
+}
+
+.social-box .button .icn svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 6rem;
+  transition: all 0.3s ease;
+}
+
+/* Hero Image styling  */
+.home .img-box {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+
+.img-box .hero-img {
+  width: 90%;
+  margin-left: 6rem;
+  padding-top: 5rem;
 }
