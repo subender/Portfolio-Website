@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <script defer src="/assets/js/particle.js"></script>
     <script defer src="/assets/js/app.js"></script>
     <title>Subender</title>
   </head>
@@ -30,6 +31,81 @@
     <!---------------- Header Ends  --------------------->
     <main>
       <!--------------- hero section starts --------------->
+      <section class="section home">
+        <div id="particles-js"></div>
+        <!-- Content-Box -->
+        <div class="content">
+          <h3 class="hero-heading">Hi There,<span class="wave"> 👋</span></h3>
+          <p class="hero-text">I Am <span id="type"></span></p>
+
+          <a href="#about" class="btn btn-primary">
+            About Me
+            <svg class="icon">
+              <use
+                class="icon"
+                xlink:href="/assets/img/sprite.svg#icon-arrow-with-circle-down"
+              ></use>
+            </svg>
+          </a>
+
+          <div class="social-box">
+            <div class="button">
+              <div class="icn">
+                <a href="https://github.com/subender">
+                  <svg>
+                    <use xlink:href="/assets/img/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="button">
+              <div class="icn">
+                <a href="#">
+                  <svg>
+                    <use
+                      xlink:href="/assets/img/sprite.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="button">
+              <div class="icn">
+                <a href="https://twitter.com/subendernath">
+                  <svg>
+                    <use xlink:href="/assets/img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="button">
+              <div class="icn">
+                <a href="https://www.instagram.com/subendernath/">
+                  <svg>
+                    <use
+                      xlink:href="/assets/img/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image-Box -->
+        <div class="img-box">
+          <img
+            class="hero-img"
+            src="/assets/img/Hero-img.svg"
+            alt="cartoon of men programming"
+          />
+        </div>
+      </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
 </html>
