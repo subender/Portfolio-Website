@@ -119,6 +119,10 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.mar-top {
+  margin-top: 2rem;
+}
 /*---------------NAV BAR-----------------*/
 
 .header {
@@ -541,15 +545,19 @@ img {
 
 .skills-education .row {
   display: flex;
-  /* align-items: center; */
+  flex-wrap: wrap;
   gap: 2rem;
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
-.row .skills,
 .row .education {
   /* background-color: red; */
-  width: 50%;
+  flex: 1 1 55rem;
+}
+
+.row .skills {
+  flex: 1 1 25rem;
+  /* background-color: pink; */
 }
 
 .skills h4,
@@ -571,10 +579,10 @@ img {
 
 .skills .skills-box .box {
   background-color: #5851dbaf;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
   border-radius: 1.4rem;
   border: 1px solid #fff;
-  width: 12.6rem;
+  width: 11.6rem;
   cursor: pointer;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2),
     inset 4px -1px 45px -4px rgba(0, 0, 0, 0.3);
@@ -601,4 +609,69 @@ img {
   margin-top: 0.6rem;
   margin-bottom: 0.3rem;
   border-radius: 1rem;
+}
+
+.education .education-box {
+  /* background-color: rgba(100, 180, 246, 0.185); */
+  border-radius: 1.4rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.edu-card {
+  display: flex;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.055);
+  padding: 1rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: all 0.1s ease;
+}
+
+.edu-card:hover {
+  box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edu-card img {
+  width: 40%;
+  height: 40%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.edu-card .edu-info {
+  display: flex;
+  flex-direction: column;
+  color: #555;
+}
+
+.edu-card .edu-info h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.edu-card .edu-info h4 {
+  font-size: 1.4rem;
+  text-align: left;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.edu-card .edu-info h4 span {
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.edu-card .edu-info p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  line-height: 1;
 }
