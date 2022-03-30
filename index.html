@@ -17,12 +17,11 @@
       <a href="#" class="logo">Subender.</a>
       <nav class="navbar">
         <ul>
-          <li><a class="nav-items active" href="#">Home</a></li>
-          <li><a class="nav-items" href="#">About</a></li>
-          <li><a class="nav-items" href="#">Skills</a></li>
-          <li><a class="nav-items" href="#">Education</a></li>
-          <li><a class="nav-items" href="#">Work</a></li>
-          <li><a class="nav-items" href="#">Contact</a></li>
+          <li><a class="nav-items active" href="#home">Home</a></li>
+          <li><a class="nav-items" href="#about">About</a></li>
+          <li><a class="nav-items" href="#skills">Skills & Educatoin</a></li>
+          <li><a class="nav-items" href="#work">Work</a></li>
+          <li><a class="nav-items" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +30,7 @@
     <!---------------- Header Ends  --------------------->
     <main>
       <!--------------- hero section starts --------------->
-      <section class="section home">
+      <section class="section home" id="home">
         <div id="particles-js"></div>
         <!-- Content-Box -->
         <div class="content">
@@ -105,7 +104,7 @@
       <!--------------- hero section Ends --------------->
 
       <!--------------- About Section Start --------------->
-      <section class="section about">
+      <section class="section about" id="about">
         <h2 class="heading">
           <span class="icon">
             <svg>
@@ -164,7 +163,7 @@
 
       <!--------Skills & Education Section Starts ---------->
 
-      <section class="section skills-education">
+      <section class="section skills-education" id="skills">
         <h2 class="heading">
           <span class="icon">
             <svg>
@@ -279,7 +278,7 @@
 
       <!------------PROJECTS SECTION STARTS --------------->
 
-      <section class="section projects">
+      <section class="section projects" id="work">
         <div class="heading-block">
           <h2 class="heading">
               <svg>
@@ -291,44 +290,156 @@
         </div>
 
         <div class="projects-container">
-          <div class="card">
-            <div class="img-box">
-            <img src="https://images.unsplash.com/10/wii.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
-          </div>
-          <div class="content-box">
-            <h2>Tic Tac Toe</h2>
-            <div class="tech-box"><span>JS</span> <span>HTML</span> <span>CSS</span></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis aperiam debitis ipsam enim incidunt quia.
-            </p>
-            <div class="link-box">
-              <a class="github" href=""> <svg>
-                <use xlink:href="assets/img/sprite.svg#icon-github"></use>
-              </svg><span>Code</span></a>
-              <a class="live" href=""> <svg>
-                <use xlink:href="assets/img/sprite.svg#icon-eye"></use>
-              </svg> <span>Live</span></a>
-            </div>
-          </div>
-          </div>
-          <div class="card">
-            card
-          </div>
-          <div class="card">
-            card
-          </div>
-          <div class="card">
-            card
-          </div>
-          <div class="card">
-            card
-            dfdf
-            
-          </div>
-          <div class="card">
-            
-          </div>
+         <!-- Projects will be inserted dynamically -->
         </div>
       </section>
+ <!------------PROJECTS SECTION ENDS ----------------->
+
+
+ <!------------CONTACE ME SECTION STARTS ----------------->
+      <section class=" section contact-me" id="contact">
+        <div class="heading-block">
+          <h2 class="heading">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-headphones"></use>
+              </svg>
+          
+           Contact<span class="me"> Me</span>
+          </h2>
+        </div>
+
+        <div class="contact-container">
+          <div class="content">
+         <div class="image-box">
+           <img src="./assets/img/contactimg.jpg" alt="contact img">
+         </div>
+         <form action="https://formsubmit.co/subendernath@gmail.com" method="POST">
+           <div class="container">
+             <div class="input-field">
+               <input type="text" placeholder="Name" name="name" required>
+               <svg>
+                 <use xlink:href="assets/img/sprite.svg#icon-user"></use>
+               </svg>  
+             </div> 
+
+             <div class="input-field">
+              <input type="email" placeholder="Email" name="email" required>
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+              </svg>  
+            </div> 
+
+            <div class="input-field">
+              <input type="number" placeholder="Phone" name="phone" required>
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
+              </svg>  
+            </div> 
+
+            <div class="input-textarea">
+              <textarea name="message" placeholder="Message" required spellcheck="false" style="height: 140px; width:450px;" ></textarea>
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-message"></use>
+              </svg> 
+            </div> 
+           </div>
+           <div class="btn-box"><button >Submit <svg>
+            <use xlink:href="assets/img/sprite.svg#icon-paper-plane"></use>
+          </svg> </button></div>
+         </form>
+        </div>
+        </div>
+      </section>
+
+      <!------------CONTACE ME SECTION ENDS ----------------->
+
+
+      <!------------------- FOOTER STARTS -------------------->
+
+      <footer>
+        <div class="footer-box">
+
+
+          <div class="my-details">
+            <h1>Subender.</h1>
+            <p>Thanks for the visit <span>🙏</span> </p>
+            <h2>Contact Info</h2>
+            <div class="contact-box">
+              <div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
+                </svg> 
+                <span>+91-8930252866</span>
+              </div>
+
+              <div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+                </svg> 
+                <span>subender.io@outlook.com</span>
+              </div>
+
+              <div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
+                </svg> 
+                <span>Rewari, Haryana,India 123401</span>
+              </div>
+            </div>
+
+          </div>
+
+<!-- --------------------------------------------------------------- -->
+
+          <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#home"><div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-arrow-with-circle-down"></use>
+                </svg> Home</a></li>
+              <li><a href="#about"><div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-arrow-with-circle-down"></use>
+                </svg> About</a></li>
+              <li><a href="#skills"><div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-arrow-with-circle-down"></use>
+                </svg> Skills & Education</a></li>
+              <li><a href="#work"><div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-arrow-with-circle-down"></use>
+                </svg> Work</a></li>
+              <li><a href="#contact"><div class="line">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#icon-arrow-with-circle-down"></use>
+                </svg> Contact</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <h2>Socials</h2>
+            <ul>
+              <li><a href="https://github.com/subender" target="_blank"><svg>
+                <use xlink:href="assets/img/sprite.svg#icon-github"></use>
+              </svg></a></li>
+              <li><a href="https://twitter.com/Subendernath" target="_blank"><svg>
+                <use xlink:href="assets/img/sprite.svg#icon-twitter"></use>
+              </svg></a></li>
+              <li><a href="mailto:subender.io@outlook.com" target="_blank"><svg>
+                <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+              </svg></a></li>
+              <li><a href="https://twitter.com/Subendernath" target="_blank"><svg>
+                <use xlink:href="assets/img/sprite.svg#icon-linkedin"></use>
+              </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="split"></div>
+        <h6 class="footer-msg">Made with <span>💙</span> by <a href="https://twitter.com/Subendernath" target="_blank""> @Subender</a> </h6>
+
+      </footer>
+      
+
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
