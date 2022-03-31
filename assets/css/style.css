@@ -182,8 +182,6 @@ svg {
 .navbar .nav-items:active,
 .navbar .nav-items.active {
   color: var(--color-primary);
-  border-bottom: 0.2rem solid var(--color-primary);
-  padding: 0.5rem 0;
 }
 
 /* -------------------------------------------------------------------- */
@@ -214,6 +212,8 @@ svg {
   padding-top: 1rem;
   z-index: 1;
   margin-top: 10rem;
+  transition: all 3s ease;
+  animation: moveInLeft 1.5s ease-in;
 }
 
 .content .hero-heading {
@@ -379,6 +379,7 @@ svg {
 .home .img-box {
   flex: 1 1 40rem;
   z-index: 1;
+  animation: moveInRight 1.2s ease-in;
 }
 
 .img-box .hero-img {
@@ -975,6 +976,13 @@ form .container .input-field {
   border-bottom-right-radius: 0;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+
+.input-textarea textarea:focus:invalid {
+  border-bottom: 3px solid var(--color-secondary);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .input-textarea svg {
   position: absolute;
   top: 8px;
@@ -1212,4 +1220,32 @@ footer {
   background-color: rgb(22, 16, 93);
   box-shadow: 0 10px 30px rgba(63, 49, 255, 0.2);
   transform: rotate(-5deg);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
