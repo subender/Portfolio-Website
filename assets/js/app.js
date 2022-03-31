@@ -42,3 +42,68 @@ const renderCards = (proj) => {
 `;
   projectsContainer.innerHTML = project;
 };
+
+// Active Section Logic
+
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-items");
+
+// window.addEventListener("scroll", () => {
+//   let currentSectoin = "";
+
+//   sections.forEach((section) => {
+//     const sectionTop = section.offsetTop;
+
+//     if (pageYOffset + 1 >= sectionTop) {
+//       currentSectoin = section.getAttribute("id");
+//     }
+//   });
+
+//   navItems.forEach((item) => {
+//     item.classList.remove("active");
+
+//     if (item.classList.contains(currentSectoin)) {
+//       item.classList.add("active");
+//     }
+//   });
+// });
+
+//Smooth Scrolling
+
+const navContainer = document.querySelector(".navbar ul");
+
+navContainer.addEventListener("click", (e) => {
+  e.preventDefault();
+  const linkElem = e.target;
+
+  if (!linkElem.classList.contains("nav-items")) {
+    return;
+  }
+
+  const sectionId = linkElem.getAttribute("href");
+
+  document.querySelector(sectionId).scrollIntoView({ behavior: "smooth" });
+});
+// -------------------------------------------------------------------------------
+// Intersection observer menu update on Scroll
+// -------------------------------------------------------------------------------
+
+const updateNav = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
+      document.querySelector(".active").classList.remove("active");
+      const id = entry.target.getAttribute("id");
+      document.querySelector(`[href="#${id}"]`).classList.add("active");
+    }
+  });
+};
+
+const opts = {
+  threshold: 0.1,
+};
+
+const observer = new IntersectionObserver(updateNav, opts);
+
+sections.forEach((section) => observer.observe(section));
+
+// -----------------------------------------------------------------
