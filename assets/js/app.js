@@ -107,3 +107,35 @@ const observer = new IntersectionObserver(updateNav, opts);
 sections.forEach((section) => observer.observe(section));
 
 // -----------------------------------------------------------------
+// Slide In Effect --------------------------->>>>
+
+const sliders = document.querySelectorAll(".slide-in");
+
+const options = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px",
+};
+
+const moveIn = (entries, _) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("appear");
+    appearOnScroll.unobserve(entry.target);
+  });
+};
+
+const appearOnScroll = new IntersectionObserver(moveIn, opts);
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
+
+// -------------------------------------------------------------------------
+// --------------------------Menu Toggler-----------------------------------
+// -------------------------------------------------------------------------
+
+const menu = document.querySelector("#menu");
+const navBar = document.querySelector(".navbar");
+
+menu.addEventListener("click", () => {
+  navBar.classList.toggle("nav-toggle");
+});
