@@ -65,6 +65,7 @@ body {
   font-family: var(--body-font);
   background: #f7f7f7;
   color: var(--color-text);
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
@@ -182,6 +183,17 @@ svg {
 .navbar .nav-items:active,
 .navbar .nav-items.active {
   color: var(--color-primary);
+}
+
+#menu {
+  cursor: pointer;
+  display: none;
+}
+
+#menu svg {
+  color: #041530;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 /* -------------------------------------------------------------------- */
@@ -1247,5 +1259,265 @@ footer {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  opacity: 0;
+  transition: opacity 0.3s ease-in, transform 0.5s ease-in;
+}
+.from-left.appear,
+.from-right.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ------------------------------------------------ */
+/* ------------------Media Quries------------------ */
+/* ------------------------------------------------ */
+
+/*************** Menu Bar **************/
+
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6.4rem;
+    right: -120%;
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #0d47a1;
+    color: var(--color-secondary);
+    transition: right 0.5s ease;
+  }
+
+  header .navbar ul {
+    padding: 1rem;
+    flex-flow: column;
+  }
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    width: 26rem;
+  }
+
+  header .navbar ul li:last-child {
+    margin-left: -2rem;
+  }
+
+  header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: var(--color-primary);
+    font-size: 2rem;
+  }
+
+  .header .navbar ul li:hover {
+    background-color: var(--color-secondary);
+  }
+
+  .header .navbar ul li:hover a {
+    color: var(--color-white);
+  }
+
+  header .navbar.nav-toggle {
+    right: 0;
+    transition: right 0.5s ease;
+  }
+
+  .img-box .hero-img {
+    width: 80%;
+    padding-top: 0;
+  }
+
+  .education .education-box .edu-card {
+    width: 90%;
+  }
+
+  .card .content-box h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1292px) {
+  .content .hero-heading {
+    font-size: 4.5rem;
+  }
+
+  .content .hero-text {
+    font-size: 3.2rem;
+  }
+
+  .content #type {
+    font-size: 3.4rem;
+  }
+
+  .skills .skills-box {
+    grid-template-columns: repeat(3, 12.6rem);
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .education h4 {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+
+  .edu-card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .contact-me .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .contact-container .image-box {
+    display: none;
+  }
+
+  .btn-box {
+    justify-content: center;
+  }
+
+  .social ul {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .card .content-box h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .edu-card .edu-info p {
+    font-size: 1.6rem;
+  }
+
+  .edu-card .edu-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .edu-card .edu-info h4 {
+    font-size: 1.2rem;
+  }
+
+  .projects .projects-container {
+    justify-items: center;
+  }
+
+  .projects-container .card {
+    width: 60%;
+    height: 41rem;
+  }
+
+  form .container .input-field {
+    width: 70%;
+  }
+
+  .input-textarea {
+    width: 70%;
+  }
+
+  form .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-box .my-details {
+    flex: 1 1 22rem;
+  }
+}
+
+@media screen and (max-width: 514px) {
+  .section {
+    padding: 2rem 5%;
+  }
+
+  .about .about-box {
+    padding: 0;
+  }
+
+  .about .about-box .about-content {
+    padding: 0;
+  }
+
+  .skills-education .row {
+    padding: 0;
+  }
+
+  .skills .skills-box {
+    padding: 1.6rem 0.8rem;
+  }
+
+  .skills-education .row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .edu-card {
+    align-items: center;
+  }
+  .edu-card .edu-info h4 {
+    font-size: 1rem;
+  }
+
+  .content-box .link-box a:link,
+  .content-box .link-box a:visited {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .content-box .link-box svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .card .content-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .content-box p {
+    font-size: 0.9rem;
+  }
+
+  .projects-container .card {
+    width: 60%;
+    height: 32.5rem;
+  }
+
+  .content-box .tech-box span {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
   }
 }
