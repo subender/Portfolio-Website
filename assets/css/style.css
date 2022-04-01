@@ -1351,7 +1351,7 @@ footer {
     position: fixed;
     top: 6.4rem;
     right: -120%;
-    width: 60%;
+    width: 80%;
     height: 100%;
     text-align: left;
     align-items: flex-start;
@@ -1520,5 +1520,80 @@ footer {
   .content-box .tech-box span {
     padding: 0.2rem 1rem;
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content .hero-heading {
+    font-size: 4rem;
+  }
+
+  .content .hero-text {
+    font-size: 2.8rem;
+  }
+
+  .content .hero-text {
+    font-size: 3rem;
+  }
+
+  .img-box .hero-img {
+    width: 75%;
+  }
+
+  .heading {
+    font-size: 2.8rem;
+  }
+
+  .about-img img {
+    width: 25rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .skills h4,
+  .education h4 {
+    margin-top: 1.4rem;
+  }
+
+  .skills .skills-box {
+    grid-template-columns: repeat(3, 11rem);
+  }
+
+  .skills .skills-box .box {
+    padding: 0.7rem 1rem;
+
+    width: 10.6rem;
+  }
+
+  .box .info {
+    font-size: 1.4rem;
+  }
+
+  .box .info img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card .content-box h2 {
+    font-size: 1rem;
+  }
+
+  .projects-container .card {
+    width: 65%;
+    height: 34.5rem;
+  }
+
+  .content-box .link-box {
+    padding: 0 0;
+  }
+
+  form .container .input-field {
+    width: 60%;
+  }
+
+  .input-textarea {
+    width: 60%;
   }
 }
