@@ -59,6 +59,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1287,6 +1288,60 @@ footer {
 
 /*************** Menu Bar **************/
 
+@media screen and (max-width: 1292px) {
+  .content .hero-heading {
+    font-size: 4.5rem;
+  }
+
+  .content .hero-text {
+    font-size: 3.2rem;
+  }
+
+  .content #type {
+    font-size: 3.4rem;
+  }
+
+  .skills .skills-box {
+    grid-template-columns: repeat(3, 12.6rem);
+    gap: 1.2rem;
+    justify-content: center;
+  }
+
+  .education h4 {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+
+  .edu-card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .contact-me .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .contact-container .image-box {
+    display: none;
+  }
+
+  .btn-box {
+    justify-content: center;
+  }
+
+  .social ul {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #menu {
     display: block;
@@ -1353,60 +1408,6 @@ footer {
 
   .card .content-box h2 {
     font-size: 1.6rem;
-  }
-}
-
-@media screen and (max-width: 1292px) {
-  .content .hero-heading {
-    font-size: 4.5rem;
-  }
-
-  .content .hero-text {
-    font-size: 3.2rem;
-  }
-
-  .content #type {
-    font-size: 3.4rem;
-  }
-
-  .skills .skills-box {
-    grid-template-columns: repeat(3, 12.6rem);
-    gap: 1.2rem;
-    justify-content: center;
-  }
-
-  .education h4 {
-    margin-bottom: 0;
-    margin-top: 3rem;
-  }
-
-  .edu-card {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  html {
-    font-size: 56.25%;
-  }
-
-  .contact-me .contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-  }
-
-  .contact-container .image-box {
-    display: none;
-  }
-
-  .btn-box {
-    justify-content: center;
-  }
-
-  .social ul {
-    display: flex;
   }
 }
 
