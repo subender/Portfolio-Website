@@ -3,7 +3,7 @@
     "name": "NFT Card Component",
     "image": "https://raw.githubusercontent.com/subender/Frontend-Mentor-Challenges/main/nft-preview-card-component-main/design/desktop-design.jpg",
     "github": "https://github.com/subender/Frontend-Mentor-Challenges/tree/main/nft-preview-card-component-main",
-    "live": "https://subender.netlify.app/nft-preview-card-component-main/",
+    "live": "https://guileless-snickerdoodle-2523de.netlify.app/nft-preview-card-component-main/",
     "description": " it’s a basic UI component made using HTML and CSS. It is a part of  Frontend Mentor Challenge. This card is responsive on bigger screens as well as on smaller screens.",
 
     "javascript": false
@@ -20,7 +20,7 @@
     "name": "QR code component",
     "image": "https://raw.githubusercontent.com/subender/Frontend-Mentor-Challenges/main/qr-code-component-main/design/desktop-design.jpg",
     "github": "https://github.com/subender/Frontend-Mentor-Challenges/tree/main/qr-code-component-main",
-    "live": "https://subender.netlify.app/qr-code-component-main/index.html",
+    "live": "https://guileless-snickerdoodle-2523de.netlify.app/qr-code-component-main/index.html",
     "description": "it’s a basic UI component made using HTML and CSS. It is a part of  Frontend Mentor Challenge. This card is responsive on bigger screens as well as on smaller screens.",
     "javascript": false
   },
