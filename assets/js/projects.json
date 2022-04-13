@@ -3,60 +3,79 @@
     "name": "NFT Card Component",
     "image": "https://raw.githubusercontent.com/subender/Frontend-Mentor-Challenges/main/nft-preview-card-component-main/design/desktop-design.jpg",
     "github": "https://github.com/subender/Frontend-Mentor-Challenges/tree/main/nft-preview-card-component-main",
-    "live": "https://subender.netlify.app/nft-preview-card-component-main/"
+    "live": "https://subender.netlify.app/nft-preview-card-component-main/",
+    "description": " it’s a basic UI component made using HTML and CSS. It is a part of  Frontend Mentor Challenge. This card is responsive on bigger screens as well as on smaller screens.",
+
+    "javascript": false
   },
   {
     "name": "Rock Paper Scissors ",
     "image": "https://raw.githubusercontent.com/subender/Rock-Paper-Scissors-Game/main/rock-paper-scissor-game.jpg",
     "github": "https://github.com/subender/Rock-Paper-Scissors-Game",
-    "live": "https://sprightly-maamoul-e144f0.netlify.app/"
+    "live": "https://sprightly-maamoul-e144f0.netlify.app/",
+    "description": "It’s a retro game you can play against computer, you will be having three options to choose if you can score 10 points before computer then you win the game otherwise you lose.",
+    "javascript": true
   },
   {
     "name": "QR code component",
     "image": "https://raw.githubusercontent.com/subender/Frontend-Mentor-Challenges/main/qr-code-component-main/design/desktop-design.jpg",
     "github": "https://github.com/subender/Frontend-Mentor-Challenges/tree/main/qr-code-component-main",
-    "live": "https://subender.netlify.app/qr-code-component-main/index.html"
+    "live": "https://subender.netlify.app/qr-code-component-main/index.html",
+    "description": "it’s a basic UI component made using HTML and CSS. It is a part of  Frontend Mentor Challenge. This card is responsive on bigger screens as well as on smaller screens.",
+    "javascript": false
   },
 
   {
     "name": "To-Do List App",
     "image": "https://raw.githubusercontent.com/subender/To-Do-App/main/to-do-list.jpg",
     "github": "https://github.com/subender/Tic-Tac-Toe-JavaScript",
-    "live": "https://guileless-ganache-87e479.netlify.app/"
+    "live": "https://guileless-ganache-87e479.netlify.app/",
+    "description": "By using this app you can schedule your daily tasks.  You can create a to-do, delete a to-do and cross a task when completed. You can also sort your completed and incomplete tasks. ",
+    "javascript": true
   },
 
   {
     "name": "Password Generator",
     "image": "https://raw.githubusercontent.com/subender/Password-Generator/main/passworkd-generator.jpg",
     "github": "https://github.com/subender/Password-Generator",
-    "live": "https://sunny-dusk-ea4d24.netlify.app/"
+    "live": "https://sunny-dusk-ea4d24.netlify.app/",
+    "description": "This app creates a password of variable lengths which may include numbers, uppercase letters, lowercase letters & special characters. Generated password can be copied using a button.",
+    "javascript": true
   },
 
   {
     "name": "Guess My Number",
     "image": "https://raw.githubusercontent.com/subender/Guess-My-Number/main/guess-my-number.jpg",
     "github": "https://github.com/subender/Guess-My-Number",
-    "live": "https://precious-sherbet-40cae1.netlify.app/"
+    "live": "https://precious-sherbet-40cae1.netlify.app/",
+    "description": "It’s a classic game in which computer goanna choose a number between 1 to 20 and user needs to guess that number you will get 20 chance to guess it and on every guess the game will give you hint.",
+    "javascript": true
   },
 
   {
     "name": "Basic Memory Game",
     "image": "https://raw.githubusercontent.com/subender/Memory-Game-JavaScript/main/memory-game.jpg",
     "github": "https://github.com/subender/Memory-Game-JavaScript",
-    "live": "https://heroic-manatee-b6f1a4.netlify.app/"
+    "live": "https://heroic-manatee-b6f1a4.netlify.app/",
+    "description": "It’s a classic  game in which the user needs to match pairs by turn over two cards at same time. The cards are placed randomly in the grid, each time the guess is correct you will get a point.",
+    "javascript": true
   },
 
   {
     "name": "Sticky Notes App",
     "image": "https://raw.githubusercontent.com/subender/Sticky-Notes-App/main/notes-app.jpg",
     "github": "https://github.com/subender/Sticky-Notes-App",
-    "live": "https://peppy-druid-8bec51.netlify.app/"
+    "live": "https://peppy-druid-8bec51.netlify.app/",
+    "description": "It’s a browser based app , using this app you can create & delete a note. The notes created are also been stored in the local storage of the browser. Closing tab or refresh will not effect saved notes",
+    "javascript": true
   },
 
   {
     "name": "Tic-Tac-Toe JavaScript",
     "image": "https://raw.githubusercontent.com/subender/Tic-Tac-Toe-JavaScript/main/tictactoe-game.jpg",
     "github": "https://github.com/subender/Tic-Tac-Toe-JavaScript",
-    "live": "https://precious-flan-9365ea.netlify.app/"
+    "live": "https://precious-flan-9365ea.netlify.app/",
+    "description": "It’s a multiplayer game, a player can choose X or O and make move on the board. If a player wins game displays a custom winner message and from there you can start new game.",
+    "javascript": true
   }
 ]
