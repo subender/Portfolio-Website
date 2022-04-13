@@ -26,9 +26,10 @@ const renderCards = (proj) => {
   </div>
   <div class="content-box">
     <h2>${proj.name}</h2>
-    <div class="tech-box"><span>JS</span> <span>HTML</span> <span>CSS</span></div>
-    <p>Lorem ipsum, dolor sit amasdf df sdf asdf asdf dfdfdfdd dfd fdasdfasdfet consectetur adipisicing elit. Corporis aperiam debitis ipsam enim incidunt quia.
-    </p>
+    <div class="tech-box"><span>HTML</span> <span>CSS</span> ${
+      proj.javascript ? "<span>JS</span>" : ""
+    } </div>
+    <p> ${proj.description} </p>
     <div class="link-box">
       <a class="github" href="${proj.github}" target="_blank" > <svg>
         <use xlink:href="assets/img/sprite.svg#icon-github"></use>
