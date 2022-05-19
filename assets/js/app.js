@@ -26,9 +26,9 @@ const renderCards = (proj) => {
   </div>
   <div class="content-box">
     <h2>${proj.name}</h2>
-    <div class="tech-box"><span>HTML</span> <span>CSS</span> ${
-      proj.javascript ? "<span>JS</span>" : ""
-    } </div>
+    <div class="tech-box">
+    ${proj.tech.map(item=>`<span>${item}</span>`).join('')}
+    </div>
     <p> ${proj.description} </p>
     <div class="link-box">
       <a class="github" href="${proj.github}" target="_blank" > <svg>
